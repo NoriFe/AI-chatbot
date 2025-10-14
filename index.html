@@ -3,27 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NoriFe AI Chatbot</title>
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
+  <title>NoriFe AI Chatbot</title>  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> 
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-
-  <div >
-    <div >      
-      NoriFe AI Chatbot
+<body class="d-flex justify-content-center align-items-center vh-100 bg-light">
+  <div class="chat-container shadow">
+    <div class="chat-header d-flex align-items-center gap-2">
+      <img src="https://www.shutterstock.com/image-vector/happy-robot-3d-ai-character-600nw-2464455965.jpg" 
+           alt="Bot Avatar" class="rounded-circle">
+      <strong>AI Chatbot</strong>
     </div>
-    <div  id="chat-body">
-      
+    <div class="chat-body" id="chat-body">      
     </div>
-    <div >
-      <input type="text" id="user-input" placeholder="Ask me anything..." />
-      <button id="send-btn">Send</button>
+    <div class="chat-footer d-flex">
+      <input type="text" id="user-input" class="form-control" placeholder="Ask me anything..." />
+      <button id="send-btn" class="btn btn-primary ms-2">Send</button>
     </div>
   </div>
-
-  <script src="index.js"></script>
+  <script src="chatbot.js"></script>
 </body>
 </html>
