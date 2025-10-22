@@ -77,7 +77,7 @@ function handleUserInput() {
       botReply("No problem! I’m here if you change your mind. 😊");
     } 
     else if (userText.includes("skills")) {
-      botReply("Here are some of his main skills: JavaScript, Ruby on Rails, JS, HTML, CSS, and more! 💻 But pssst… don't tell anyone, he's learning Python now and the syntax is giving him a bit of a headache 😅");
+      botReply("Here are some of his main skills: JavaScript, Ruby on Rails, PHP, HTML, CSS, and more! 💻 But pssst… don't tell anyone, he's learning Python now and the syntax is giving him a bit of a headache 😅");
     } 
     else if (userText.includes("projects")) {
       botReply("Check out his projects on GitHub: https://github.com/NoriFe ");
