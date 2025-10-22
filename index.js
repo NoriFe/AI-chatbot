@@ -6,6 +6,7 @@ const chatContainer = document.querySelector('.chat-container');
 
 let stage = 0;
 
+// toggle chat visibility
 hideBtn.addEventListener('click', () => {
   const chatBody = document.getElementById('chat-body');
   const chatFooter = document.querySelector('.chat-footer');
@@ -20,7 +21,7 @@ hideBtn.addEventListener('click', () => {
     hideBtn.textContent = '−';
   }
 });
-
+// adding new msg to chat window
 function addMessage(message, sender = 'bot') {
   const messageDiv = document.createElement('div');
   messageDiv.classList.add('message', 'my-1', 'p-2', 'rounded');
@@ -31,17 +32,17 @@ function addMessage(message, sender = 'bot') {
     messageDiv.classList.add('bg-light', 'text-dark', 'align-self-end');
   }
 
-  messageDiv.textContent = message;
+  messageDiv.textContent = message; 
   chatBody.appendChild(messageDiv);
-  chatBody.scrollTop = chatBody.scrollHeight;
+  chatBody.scrollTop = chatBody.scrollHeight; // auto scroll to bottom
 }
 
-
+// a little delay
 function botReply(message, delay = 700) {
-  setTimeout(() => addMessage(message, 'bot'), delay);
+  setTimeout(() => addMessage(message, 'bot'), delay); 
 }
 
-
+// handle user input and bot responses
 function handleUserInput() {
   const userText = userInput.value.trim().toLowerCase();
   if (userText === '') return;
@@ -70,9 +71,9 @@ function handleUserInput() {
   } 
   else {    
     if (userText.includes("yes") || userText.includes("sure") || userText.includes("ok")) {
-      botReply("Great! You can ask me about 'skills', 'projects', or 'background'.");
+      botReply("Great! You can ask me about his 'skills', 'projects', or 'background'.");
     } 
-    else if (userText.includes("no") || userText.includes("not good") || userText.includes("bad")) {
+    else if (userText.includes("no") || userText.includes("not really") || userText.includes("maybe later")) {
       botReply("No problem! I’m here if you change your mind. 😊");
     } 
     else if (userText.includes("skills")) {
@@ -90,13 +91,13 @@ function handleUserInput() {
   }
 }
 
-
+// 
 sendBtn.addEventListener('click', handleUserInput);
 userInput.addEventListener('keypress', function (e) {
   if (e.key === 'Enter') handleUserInput();
 });
 
-
+// bot greeting on load
 window.onload = () => {
   botReply("Hello there! 👋 I'm 10008358 AI Chatbot.");
   botReply("How are you doing today?");
