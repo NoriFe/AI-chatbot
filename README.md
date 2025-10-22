@@ -16,7 +16,7 @@ Lightweight & responsive: Built with HTML, CSS, and vanilla JavaScript.
 
 How It Works
 
-Rule-based logic: Detects keywords in user input (good, bad, skills, projects, etc.) and replies accordingly.
+Rule based logic: Detects keywords in user input (good, bad, skills, projects, etc.) and replies accordingly.
 
 Stage tracking: Conversation stages guide the flow from greeting → mood check → portfolio info.
 
@@ -40,6 +40,6 @@ Ask about:
 
 skills – to see developer skills
 
-projects – to get GitHub projects link
+projects – to get GitHub page link
 
 background – to learn more about the developer

@@ -76,16 +76,16 @@ function handleUserInput() {
       botReply("No problem! I’m here if you change your mind. 😊");
     } 
     else if (userText.includes("skills")) {
-      botReply("Here are my main skills: JavaScript, Ruby on Rails, Stimulus, HTML, CSS, and more! 💻 But pssst… don't tell anyone, he's learning Python now and the syntax is giving him a bit of a headache 😅");
+      botReply("Here are some of his main skills: JavaScript, Ruby on Rails, Stimulus, HTML, CSS, and more! 💻 But pssst… don't tell anyone, he's learning Python now and the syntax is giving him a bit of a headache 😅");
     } 
     else if (userText.includes("projects")) {
-      botReply("Check out my projects on GitHub: https://github.com/NoriFe ");
+      botReply("Check out his projects on GitHub: https://github.com/NoriFe ");
     } 
     else if (userText.includes("background")) {
-      botReply("I am a full stack developer with experience in building web apps using Rails, JS, and modern front-end tools.");
+      botReply("He isa full stack developer with experience in building web apps using Rails, JS, and modern front end tools.");
     } 
     else {
-      botReply("I'm still learning, but you can ask me about 'skills', 'projects', or 'background'.");
+      botReply("I'm still in phases of learning, but you can ask me about 'skills', 'projects' or 'background'.");
     }
   }
 }
