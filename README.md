@@ -43,3 +43,18 @@ skills – to see developer skills
 projects – to get GitHub page link
 
 background – to learn more about the developer
+
+Links:
+
+https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById
+
+https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
+
+https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement
+
+https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollTop?utm_source
+
+https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes
+
